@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" type="text/css" href="./styles/style.css">
+          <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+          <link rel="stylesheet" href="./styles/responsive.css">
+          <title>PabloParking</title>
+     </head>
+
+     <body>
+
+          <!--? Navbar Start -->
+          <header>
+               <nav id="navbar">
+                    <div class="nav-logo">
+                         <div class="logo">
+                              <a href="index.html">
+                                   <div>
+                                        <img src="./images/logo.png" alt="">
+                                   </div>
+                                   <div id="logo-txt">PabloParking</div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="nav-link">
+                         <ul>
+                              <a href="#home">
+                                   <li>Home</li>
+                              </a>
+                              <a href="#services">
+                                   <li>Services</li>
+                              </a>
+                              <a href="#about">
+                                   <li>About Us</li>
+                              </a>
+                              <a href="#ContactUs">
+                                   <li>Contact Us</li>
+                              </a>
+                         </ul>
+                    </div>
+                    <div class="nav-right-login">
+                         <img src="./images/trucGif.gif" alt="">
+                         <!-- <a href=""><button>SignUp</button></a>
+                         <a href=""><button>LogIn</button></a> -->
+                    </div>
+               </nav>
+               <div class="cycle">
+                    <img src="./images/cycle.gif" alt="">
+               </div>
+          </header>
+          <!--? Navbar End -->
+
+
+          <!--? Main-Section Start -->
+          <main id="home">
+               <section id="container">
+                    <seciton id="home-left">
+                         <!--  -->
+                         <div class="welcome">
+                              <div><Span>Looking</Span> to</div>
+                              <div>
+                                   Park your Car
+                              </div>
+                         </div>
+                         <div>
+                              <p>
+                                   Transforming Parking Into Intelligent Mobility Hubs
+                              </p>
+                         </div>
+                         <div class="app-store">
+                              <div>
+                                   <img src="./images/512x512.png" alt="">
+                              </div>
+                              <div>
+                                   <img src="./images/ios.png" alt="">
+                              </div>
+                         </div>
+
+
+                    </seciton>
+                    <seciton id="home-right">
+                         <!--  -->
+                         <div class="image-bg"></div>
+                         <div class="jeep-img">
+                              <img src="./images/pngwing1.com.png" alt="">
+                         </div>
+                    </seciton>
+               </section>
+
+          </main>
+          <!--? Main-Section End -->
+
+          <!--? Servies Section Start -->
+          <section id="services">
+               <div class="services-head">
+                    <h1>Services</h1>
+               </div>
+               <div id="services-main">
+                    <div class="form-container">
+                         <div class="form-enhancer"><img src="./images/logo.png" alt=""> </div>
+                         <form id="form">
+                              <div class="input-box"> <input type="text" id="name" placeholder="Name"> </div>
+                              <div class="input-box" id="vehicleType">
+                                   <div class="select-text"> Select your vehicle </div>
+                                   <ul id="vehicle">
+                                        <li>Jeep</li>
+                                        <li>Bike</li>
+                                        <li>Car</li>
+                                        <li>Bus</li>
+                                        <li>Truck</li>
+                                   </ul>
+                              </div>
+                              <div class="input-box">
+                                   <input type="text" id="reg_num" placeholder="Registeration number">
+                              </div>
+
+                              <div>
+                                   <a id="gotoServicesPage">
+                                        <button type="button" value="Find Slot" onclick="findSlot()">
+                                             <span>
+                                                  Find Slot
+                                             </span>
+                                             <img id="tukur" src="./images/giphy.webp" />
+                                        </button>
+                                   </a>
+                              </div>
+                         </form>
+                    </div>
+                    <div class="arrow-of-services">
+                         <div class="arrow-services">
+                              <img src="./images/red-arrow.webp" alt="">
+                         </div>
+                    </div>
+                    <div class="parking-gif">
+                         <!-- <img src="https://cdn.dribbble.com/users/2118336/screenshots/12113942/media/ec72a5e052af7792a64a1f3fd156af28.gif"
+                              alt=""> -->
+                         <img src="./images/Parking.png" alt="">
+                    </div>
+               </div>
+               <!--  -->
+
+               <!--  -->
+               <section id="parking">
+                    <div class="overlay-searching">
+                         <div class="loader-searching" id="loader-searching">
+                              <div>
+                                   <img src="./images/animated-car-image-0252.gif" alt="">
+                              </div>
+                         </div>
+                    </div>
+                    <div id="floor">
+                         <div id="lane1" class="lane">
+                              <div class="slot" id="slot-1">
+                                   <img src="./images/Bike.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-2">
+                                   <img src="./images/Bike.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-3">
+                                   <img src="./images/Bike.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-4">
+                                   <img src="./images/Bike.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-5">
+                                   <img src="./images/Bike.png" alt="">
+                              </div>
+
+                         </div>
+                         <div id="lane2" class="lane">
+                              <div class="slot" id="slot-1">
+                                   <img src="./images/Jeep.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-2">
+                                   <img src="./images/Jeep.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-3">
+                                   <img src="./images/Jeep.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-4">
+                                   <img src="./images/Jeep.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-5">
+                                   <img src="./images/Jeep.png" alt="">
+                              </div>
+
+                         </div>
+                         <div id="lane3" class="lane">
+                              <div class="slot" id="slot-1">
+                                   <img src="./images/Car.png" alt="">
+
+                              </div>
+                              <div class="slot" id="slot-2">
+                                   <img src="./images/Car.png" alt="">
+
+                              </div>
+                              <div class="slot" id="slot-3">
+                                   <img src="./images/Car.png" alt="">
+
+                              </div>
+                              <div class="slot" id="slot-4">
+                                   <img src="./images/Car.png" alt="">
+
+                              </div>
+                              <div class="slot" id="slot-5">
+                                   <img src="./images/Car.png" alt="">
+
+                              </div>
+
+                         </div>
+                         <div id="lane4" class="lane">
+                              <div class="slot" id="slot-1">
+                                   <img src="./images/Bus.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-2">
+                                   <img src="./images/Bus.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-3">
+                                   <img src="./images/Bus.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-4">
+                                   <img src="./images/Bus.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-5">
+                                   <img src="./images/Bus.png" alt="">
+                              </div>
+
+                         </div>
+                         <div id="lane5" class="lane">
+                              <div class="slot" id="slot-1">
+                                   <img src="./images/Truck.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-2">
+                                   <img src="./images/Truck.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-3">
+                                   <img src="./images/Truck.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-4">
+                                   <img src="./images/Truck.png" alt="">
+                              </div>
+                              <div class="slot" id="slot-5">
+                                   <img src="./images/Truck.png" alt="">
+                              </div>
+
+                         </div>
+                    </div>
+                    <div class="parking-recipt">
+
+                         <div class="recipt-container">
+                              <h1>--Parking Receipt--</h1>
+                              <div class="recipt-date">
+                                   <div class="recipt">
+                                        Receipt no: <span> --</span>
+                                   </div>
+                                   <div class="date">
+                                        Date: <span> --</span>
+                                   </div>
+                              </div>
+                              <div class="name">
+                                   Name: <span> --</span>
+                              </div>
+
+                              <div class="reg_num">
+                                   Reg no: <span>--</span>
+                              </div>
+
+                              <div class="type">
+                                   Vehicle type: <span> --</span>
+                              </div>
+
+                              <div class="floor-slot">
+                                   <div class="floor">
+                                        Floor no: <span>--</span>
+                                   </div>
+                                   <span>|</span>
+                                   <div class="Lane">
+                                        Lane no: <span>--</span>
+                                   </div>
+                                   <span>|</span>
+                                   <div class="Slot">
+                                        Slot no: <span> --</span>
+                                   </div>
+
+                              </div>
+                              <div class="totalPrice">
+                                   Total price: <span> --</span>
+                              </div>
+                              <div class="promo-code">
+                                   <div class="promo">
+                                        <input type="text" placeholder="Enter Coupon code">
+                                   </div>
+                                   <div class="apply_promo">
+                                        <button>Apply Promo</button>
+                                   </div>
+                              </div>
+
+                              <div class="pay">
+                                   <button>Pay <span></span></button>
+                              </div>
+
+                              <div id="paid">
+                                   <img src="./images/paid.png" alt="">
+                              </div>
+                         </div>
+
+                    </div>
+               </section>
+
+          </section>
+          <!--? Servies Section End -->
+
+          <!--? About Section Start -->
+          <section id="about">
+               <div class="about-head">
+                    <p>About Us</p>
+                    <p>We are offering these services</p>
+               </div>
+               <div class="about-container1">
+                    <div class="about-left">
+                         <img src="./images/wrangler.png" alt="">
+                    </div>
+                    <div class="about-right">
+                         <div>
+                              <h1>About Safety</h1>
+                              <p>we are offering the the additional lighting for better view, and 24/7 camera
+                                   surveillance and our
+                                   cameras are not older analog CCTV cameras were hard-wired, newer security cameras
+                                   connect wirelessly
+                                   to the Internet and record data straight into the cloud.
+                                   License plate recognition features that capture the characters on a plate and record
+                                   the data. Modern security
+                                   cameras can be cloud-based so that data is stored off-site and not on a vulnerab
+                                   Motion sensors can detect action occurring around your video surveillance camera.
+                                   Smart software allows your security team to program
+                                   these cameras to do things like zoom in on the movement. This can be combined with an
+                                   alarm or a floodlight feature, all while recording the activate into the cloud.
+                              </p>
+
+                         </div>
+                    </div>
+               </div>
+               <div class="about-container2">
+
+                    <div class="about-left">
+                         <div>
+                              <h1>About Management</h1>
+                              <p> Pablo Parking System is a unique parking management system. Which is suitable for all
+                                   types of vehicles, it digitizes end-to end parking processes including multi-tenant,
+                                   multi-level parking, vehicle bassed parking and many more.
+
+                                   It is integrated with visitor management system, FASTag, and access control hardware.
+                                   Extremely useful for shared parking spaces, the solution automates day-to-day
+                                   processes such as auto-identifying appropriate parking slots - be it reserved or
+                                   pay-and-park, auto-generating parking tickets, levying penalties,and many more.</p>
+
+                         </div>
+                    </div>
+                    <div class="about-right">
+                         <img src="./images/sedan.png" alt="">
+                    </div>
+               </div>
+          </section>
+
+          <!--? About Section End -->
+          <!--? Contact US Section Start -->
+          <section id="ContactUs">
+               <div>
+                    <h1>Contact Us</h1>
+               </div>
+               <div id="contact-main">
+                    <div class="message-img">
+                         <img src="./images/message.webp" alt="">
+                    </div>
+                    <div id="contactForm">
+
+                         <form id="contactUsForm">
+                              <div class="input"><input title="Please enter your name" id='name' type="text"
+                                        placeholder="Enter your name 📛"></div>
+                              <div class="input"><input title="Please enter the email address" id='email' type="email"
+                                        placeholder="Enter your email 📧"></div>
+                              <div class="input"><input title="Please enter mobile number" id='mobNo' type=" tel"
+                                        placeholder="Enter your number ☎️"></div>
+                              <div class="input">
+                                   <textarea title="Please write you suggestion" name="" id="suggestion" cols="30"
+                                        rows=5" placeholder="Suggestion ✍️"></textarea>
+                              </div>
+                         </form>
+                         <div class="input btn">
+                              <div class="source">
+                                   <div title="Click to Checkout the source Code on Github" id="github">
+                                        <a href="https://github.com/Vishwa9011/PabloParking" target="_blank">
+                                             <button>Source Code on GitHub
+                                                  <img src="./images/github.png" alt="">
+                                             </button>
+                                        </a>
+                                   </div>
+                                   <div class="download" title="Click to Download the Source Code">
+                                        <a href="PabloParkingSourceCode.zip" download>
+                                             <img src="./images/download.png" alt="">
+                                        </a>
+                                   </div>
+                              </div>
+                              <div>
+                                   <button title="Send Message" onclick="SendMessage()">Send Message</button>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </section>
+          <!--? Contact US Section End -->
+
+
+          <!--? Investors Start -->
+          <section id="investors">
+               <div>
+                    <h1>Investors</h1>
+               </div>
+               <section id="investor-container">
+                    <aside id="investor-left" class="investor-cards">
+                         <div class="investor-image">
+                              <a href="https://www.linkedin.com/in/vishwa-vivek-yadav-28a501240/" target="_blank"><img
+                                        src="./images/Karan.jpg" alt=""></a>
+                         </div>
+                         <div class="investor-details">
+                              <div class="investor-about">
+                                   <p>Vishwa Vivek Yadav</p>
+                                   <p>Passionate for <span class="fullStack"> <span class="red">MERN</span> Stack
+                                             Developers</span></p>
+                                   <div class="investors-link">
+                                        <div>
+                                             <a href="https://github.com/Vishwa9011" target="_blank">
+                                                  <img src="./images/newGithub.png" alt="">
+                                             </a>
+                                        </div>
+                                        <div>
+                                             <a href="https://www.linkedin.com/in/vishwa-vivek-yadav-28a501240/"
+                                                  target="_blank">
+                                                  <img src="./images/linkedin.png" alt="">
+                                             </a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </aside>
+                    <aside id="investor-mid" class="investor-cards">
+                         <div class="investor-image">
+                              <a target="_blank"
+                                   href="https://www.linkedin.com/in/atanu-karmakar-7ab110227?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGZndOHC8RgirBfyh225CHQ%3D%3D">
+                                   <img src="./images/AtanuBhai.png" alt=""></a>
+                         </div>
+                         <div class="investor-details">
+                              <div class="investor-about">
+                                   <p>Atanu Karmakar</p>
+                                   <p>Passionate for <span class="fullStack"><span class="red">MERN</span> Stack
+                                             Developers</span></p>
+                                   <div class="investors-link">
+                                        <div>
+                                             <a href="https://github.com/Atanu8250" target="_blank">
+                                                  <img src="./images/newGithub.png" alt="">
+                                             </a>
+                                        </div>
+                                        <div>
+                                             <a href="https://www.linkedin.com/in/atanu-karmakar-7ab110227?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGZndOHC8RgirBfyh225CHQ%3D%3D"
+                                                  target="_blank">
+                                                  <img src="./images/linkedin.png" alt="">
+                                             </a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </aside>
+                    <aside id="investor-right" class="investor-cards">
+                         <div class="investor-image">
+                              <a href="https://www.linkedin.com/in/abhishek-ojha-03794b1aa/" target="_blank"><img
+                                        src="./images/abhishekBhai.jpg" alt=""></a>
+                         </div>
+                         <div class="investor-details">
+                              <div class="investor-about">
+                                   <p>Abhishek Ojha</p>
+                                   <p>Passionate for <span class="fullStack"><span class="red">MERN</span> Stack
+                                             Developers</span></p>
+                                   <div class="investors-link">
+                                        <div>
+                                             <a href="https://github.com/AbhishekOjha5972" target="_blank">
+                                                  <img src="./images/newGithub.png" alt="">
+                                             </a>
+                                        </div>
+                                        <div>
+                                             <a href="https://www.linkedin.com/in/abhishek-ojha-03794b1aa/"
+                                                  target="_blank">
+                                                  <img src="./images/linkedin.png" alt="">
+                                             </a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </aside>
+               </section>
+          </section>
+          <!--? Investors End -->
+
+          <!-- ? footer start -->
+          <footer>
+               <div class="lower-row">
+                    <div class="copyright">
+                         © 2022 by PabloParking | Services for Parking | All rights reserved.
+                    </div>
+                    <div>
+                         Terms Conditons
+                    </div>
+               </div>
+          </footer>
+          <!-- ? footer end -->
+
+          <!--? Alert window -->
+          <div id="alert-box">
+               <div class="alert-cross">
+                    <img src="./images/close.png" alt="">
+               </div>
+               <div class="alert-message">
+                    <p>please enter valid details please enter valid details </p>
+               </div>
+               <div class="alert-line"></div>
+          </div>
+          <!--? Alert window -->
+          <script src="./scripts/index.js"></script>
+     </body>
+
+</html>
